@@ -12,6 +12,7 @@
 
 html,
 body {
+  margin: 8px;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -582,11 +583,13 @@ ol {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background: url("../img/main-pic.png");
 }
 
 .hs-item h2 {
   font-weight: 400;
-  font-size: 72px;
+  font-size: 63px;
+  font-family: Raleway Medium;
   margin-bottom: 10px;
   position: relative;
   top: 50px;
@@ -1461,6 +1464,72 @@ ol {
   background: #ddd;
 }
 
+/*These are my change-style*/
+
+.description{
+  padding: 0px 8%
+}
+
+.description-letter{
+  font-size: 20px;
+  font-family: Raleway Light;
+  letter-spacing: 1px;
+}
+
+.mask-blue{
+  width: 50%; 
+  height: 933px; 
+  background: #003f82; 
+  opacity: 0.94; 
+  position: absolute;
+}
+
+.m-mark-pic{
+  text-align: center;
+  display: block;
+}
+
+.m-mark{
+  width: 80px;
+  height: 79px;
+  position: relative;
+  z-index: 10;
+  top: -40px;
+}
+
+.practice-letter{
+  width: 410px; 
+  margin: 70px auto;
+}
+
+.practice-area{
+  font-size: 36px; 
+  font-family: Raleway; 
+  font-weight: bolder;
+}
+
+.underline{
+  width: 300px; 
+  height: 5px; 
+  margin: 15px auto; 
+  background: black; 
+}
+
+.raws{
+  padding-right: 130px; 
+  padding-left: 130px;
+}
+
+.raw-area{
+  background: #4080b9; 
+  padding: 100px 60px;
+}
+
+.raw-description{
+  display: block;
+}
+
+
 /*------------------
   Responsive
 ---------------------*/
@@ -1626,6 +1695,20 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 1200px) {
+  .mask-blue{
+    width: 100%;
+    height: 400px;
+    top: 533px;
+  }
+
+  .m-mark-pic{
+    display: none;
+  }
+
+  .m-mark{
+    display: none;
+  }
+
   .header-section {
     position: relative;
   }
@@ -1759,6 +1842,22 @@ ol {
     width: 60%;
     height: 60%;
   }
+  .mask-blue{
+    width: 100%;
+    height: 400px;
+    top: 533px;
+  }
+  .m-mark-pic{
+    display: none;
+  }
+  .m-mark{
+    display: none;
+  }
+
+  .hs-item {
+    background: url("../img/phone-bg.png") no-repeat;
+    background-size: 100%;
+  }
 }
 
 /* Small Mobile :320px. */
@@ -1769,9 +1868,91 @@ ol {
     font-size: 50px;
   }
   .site-logo{
-    width: 60%;
-    height: 60%;
+    width: 40%;
+    height: 40%;
   }
+
+  .hs-item {
+    background: url("../img/phone-bg.png") no-repeat;
+    background-size: 110%;
+    height: 557px;
+  }
+
+  .mask-light{
+    width: 100%;
+    height: 85px;
+    margin-top: -10px;
+    position: absolute;
+    background: #00529b;
+    opacity: 0.3;
+  }
+
+  .mask-blue{
+    width: 100%;
+    height: 220px;
+    top: 300px;
+    opacity: 1;
+  }
+
+  .m-mark-pic{
+    display: none;
+  }
+
+  .m-mark{
+    display: none;
+  }
+
+  .description{
+    text-align: center;
+    margin-top: 180px;
+  }
+
+  .description-letter{
+    font-size: 16px;
+  }
+
+  .site-btn{
+    font-size: 10px;
+    margin-top: 0px;
+  }
+
+  .hs-item h2{
+    font-size: 28px;
+    top: 70px;
+  }
+
+  .practice-letter{
+    text-align: center;
+    margin: 0px;
+  }
+
+  .practice-area{
+    font-size: 14px; 
+  }
+
+  .underline{
+    width: 70px; 
+    height: 2px; 
+    margin: 5px auto; 
+  }
+
+  .raws{
+    padding: 0px;
+  }
+
+  .raw-description{
+    display: none;
+  }
+
+  .facts-section{
+    padding: 10px 0px;
+  }
+
+  .raw-area{
+    width: 25%;
+    text-align:center;
+  }
+
   .service .service-icon {
     width: 70px;
     height: 70px;
@@ -1822,36 +2003,5 @@ ol {
   .footer-menu li a {
     margin-left: 15px;
   }
-  .mask-blue{
-    width: 100%;
-    height: 400px;
-    top: 400px;
-  }
-}
-
-.big-title{
-  font-family: Raleway Medium;
-  font-size: 63px;
-}
-
-.description-letter{
-  font-size: 20px;
-  font-family: Raleway Light;
-  letter-spacing: 2px;
-}
-
-.mask-blue{
-  width: 50%; 
-  height: 933px; 
-  background: #003f82; 
-  opacity: 0.94; 
-  position: absolute;
-}
-
-.m-mark{
-  width: 80px;
-  height: 79px;
-  position: relative;
-  z-index: 10;
-  top: -40px;
+  
 }
